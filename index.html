@@ -30,87 +30,93 @@
   </head>
   <body class="white-bg">
     <header>
-    div class="header-frame">
-    <div class="logo">
-      <svg width="24" height="24">
-        <use href="./images/icons.svg#icon-logo"></use>
-      </svg>
-      <svg width="77" height="24">
-        <use href="./images/icons.svg#icon-Bookshelf"></use>
-      </svg>
-    </div>
-    <div class="nav-part">
-      <input type="checkbox" id="switch" />
-      <label for="switch" class="h-switch">Toggle</label>
-
-      <button
-        class="hamburger-button js-toggle-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          class="icon-align-left"
-          width="28"
-          height="28"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <use href="./images/icons.svg#icon-align-left"></use>
-        </svg>
-        <svg
-          class="icon-x-item"
-          width="28px"
-          height="28px"
-          viewBox="0 0 28 28"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <use href="./images/icons.svg#x-item"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-
-  <div class="menu-container js-menu-container bg-books" id="mobile-menu" data-modal>
-    <div class="menu-content">
-      <div class="sign-up-content">
-        <button class="sign-up-btn">
-          <span class="sign-text">Sign up</span>
-          <svg
-            class="arrow-item"
-            width="20px"
-            height="20px"
-            viewBox="0 0 28 28"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="./images/icons.svg#arrow"></use>
+      <div class="header-frame">
+        <div class="logo">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-logo"></use>
           </svg>
-        </button>
-        <!-- formularz logowania (ukryty) -->
-        <div class="sign-up-form hidden">
-          <button class="sign-up-form-btn">
-            <span class="sign-form-text">Sign up</span>
+          <svg width="77" height="24">
+            <use href="./images/icons.svg#icon-Bookshelf"></use>
+          </svg>
+        </div>
+        <div class="nav-part">
+          <input type="checkbox" id="switch" />
+          <label for="switch" class="h-switch">Toggle</label>
+
+          <button
+            class="hamburger-button js-toggle-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="icon-align-left"
+              width="28"
+              height="28"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./images/icons.svg#icon-align-left"></use>
+            </svg>
+            <svg
+              class="icon-x-item"
+              width="28px"
+              height="28px"
+              viewBox="0 0 28 28"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./images/icons.svg#x-item"></use>
+            </svg>
           </button>
         </div>
       </div>
-      <div class="user-menu hidden">
-        <div class="home-item">
-          <a class="button-home" href="./index.html"><span class="home-text">HOME</span></a>
-        </div>
-        <div class="shopping-item">
-          <span class="shopping-text">SHOPPING LIST</span>
-          <svg
-            class="bag-item"
-            width="20px"
-            height="20px"
-            viewBox="0 0 28 28"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="./images/icons.svg#bag"></use>
-          </svg>
+
+      <div
+        class="menu-container js-menu-container bg-books"
+        id="mobile-menu"
+        data-modal
+      >
+        <div class="menu-content">
+          <div class="sign-up-content">
+            <button class="sign-up-btn">
+              <span class="sign-text">Sign up</span>
+              <svg
+                class="arrow-item"
+                width="20px"
+                height="20px"
+                viewBox="0 0 28 28"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="./images/icons.svg#arrow"></use>
+              </svg>
+            </button>
+            <!-- formularz logowania (ukryty) -->
+            <div class="sign-up-form hidden">
+              <button class="sign-up-form-btn">
+                <span class="sign-form-text">Sign up</span>
+              </button>
+            </div>
+          </div>
+          <div class="user-menu hidden">
+            <div class="home-item">
+              <a class="button-home" href="./index.html"
+                ><span class="home-text">HOME</span></a
+              >
+            </div>
+            <div class="shopping-item">
+              <span class="shopping-text">SHOPPING LIST</span>
+              <svg
+                class="bag-item"
+                width="20px"
+                height="20px"
+                viewBox="0 0 28 28"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="./images/icons.svg#bag"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
     </header>
     <main>
       <div class="list-section container">
@@ -123,10 +129,67 @@
         <h1 class="bl-header"></h1>
         <div class="bl-container"></div>
       </div>
-        <div class="sl-container">
-    <h1>Shopping <span class="sl-span">List</span></h1>
-    <div id="shopping-list"></div>
-  </div>
+      <div class="sl-container">
+        <h1>Shopping <span class="sl-span">List</span></h1>
+        <div id="shopping-list"></div>
+      </div>
+
+      <div id="book-modal" class="hidden book-modal">
+        <div class="book-modal-container">
+          <div class="book-modal-wrapper">
+            <img
+              id="book-modal-image"
+              class="book-modal-image"
+              src="https://picsum.photos/seed/randomimg/287/408"
+              alt="book cover"
+              width="287"
+              height="408"
+            />
+
+            <div class="book-modal-text-container">
+              <div class="book-modal-title-container">
+                <h2 id="book-title" class="book-modal-title">Book title</h2>
+                <h3 id="book-author" class="book-modal-author">Book Author</h3>
+              </div>
+              <p id="book-desc" class="book-modal-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Possimus ducimus culpa deleniti! Voluptatum odit repellat,
+                cumque, sed exercitationem, reiciendis dolores aspernatur labore
+                ab perspiciatis nisi. Earum, inventore accusantium!
+                Consequuntur, dolorem.
+              </p>
+              <div class="book-modal-icon-contatiner">
+                <a
+                  id="book-amazon-url"
+                  class="book-amazon-url"
+                  href="https://www.amazon.com/"
+                  target="_blank"
+                >
+                  <svg width="62" height="19">
+                    <use
+                      class="book-amazon-icon"
+                      href="/src/images/icons.svg#icon-amazon"
+                    ></use></svg
+                ></a>
+                <a class="book-link-icon" href="" target="_blank">
+                  <svg width="33" height="32">
+                    <use href="/src/images/icons.svg#icon-book-icon"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button id="book-modal-btn" class="book-modal-button">
+            Add to Shoping List
+          </button>
+          <button id="book-modal-close-btn" class="book-modal-close-button">
+            <svg width="24" height="24">
+              <use href="/src/images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="./js/header.mjs"></script>
