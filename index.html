@@ -23,17 +23,26 @@
     />
     <link rel="stylesheet" href="./css/partials/reset.css" />
     <link rel="stylesheet" href="./css/partials/variables.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body class="white-bg">
     <header>
       <include src="./partials/header.html"></include>
     </header>
     <main>
-      <include src="./partials/book-catalog.html"></include>
-      <include src="./partials/book-modal.html"></include>
-      <include src="./partials/book-list.html"></include>
-      <include src="./partials/shopping-list.html"></include>
+      <div class="list-section container">
+        <ul class="all-category">
+          <li class="list-section-item-list">All Categories</li>
+        </ul>
+      </div>
+      <div class="searched-books"></div>
+      <div class="bl-section">
+        <h1 class="bl-header"></h1>
+        <div class="bl-container"></div>
+      </div>
     </main>
     <footer></footer>
     <script src="./js/header.mjs"></script>
